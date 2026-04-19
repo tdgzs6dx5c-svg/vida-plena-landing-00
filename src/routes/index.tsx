@@ -91,36 +91,23 @@ function Index() {
       </header>
 
       {/* Hero */}
-      <section id="top" className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src={heroClinic}
-            alt="Recepção moderna da Clínica Vida Plena"
-            width={1600}
-            height={1200}
-            className="h-full w-full object-cover"
-          />
-          <div
-            className="absolute inset-0"
-            style={{ backgroundImage: "var(--gradient-hero)" }}
-          />
-        </div>
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 md:py-32 lg:py-40">
-          <div className="max-w-3xl text-primary-foreground">
-            <span className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
+      <section id="top" className="relative overflow-hidden" style={{ background: "var(--gradient-soft)" }}>
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
+          <div>
+            <span className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
               Saúde · Confiança · Tecnologia
             </span>
-            <h1 className="mt-5 text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
+            <h1 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
               Cuidando da sua saúde com excelência e tecnologia
             </h1>
-            <h2 className="mt-5 text-lg font-normal text-white/90 md:text-xl">
+            <h2 className="mt-5 text-lg font-normal text-muted-foreground md:text-xl">
               Atendimento humanizado e serviços completos para o seu bem-estar
             </h2>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button
                 asChild
                 size="lg"
-                className="bg-background text-foreground shadow-[var(--shadow-soft)] hover:bg-background/90"
+                className="bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-95"
               >
                 <a href="#contato">Agende sua consulta</a>
               </Button>
@@ -128,10 +115,20 @@ function Index() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white/40 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground"
               >
                 <a href="#servicos">Conheça nossos serviços</a>
               </Button>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
+              <img
+                src={heroClinic}
+                alt="Recepção moderna da Clínica Vida Plena"
+                width={1600}
+                height={1200}
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -306,11 +303,11 @@ function Index() {
             <ul className="mt-8 space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 text-primary" />
-                <span>Av. das Palmeiras, 1234 — Centro, São Paulo/SP</span>
+                <span>SCS Quadra 7, Bloco A — Asa Sul, Brasília/DF</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-5 w-5 text-primary" />
-                <span>(11) 4002-8922</span>
+                <span>(61) 4002-8922</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-5 w-5 text-primary" />
@@ -381,13 +378,13 @@ function Index() {
           </div>
           <div className="text-sm text-muted-foreground">
             <h3 className="text-sm font-semibold text-foreground">Endereço</h3>
-            <p className="mt-2">Av. das Palmeiras, 1234</p>
-            <p>Centro — São Paulo/SP</p>
-            <p>CEP 01000-000</p>
+            <p className="mt-2">SCS Quadra 7, Bloco A</p>
+            <p>Asa Sul — Brasília/DF</p>
+            <p>CEP 70300-911</p>
           </div>
           <div className="text-sm text-muted-foreground">
             <h3 className="text-sm font-semibold text-foreground">Contato</h3>
-            <p className="mt-2">Telefone: (11) 4002-8922</p>
+            <p className="mt-2">Telefone: (61) 4002-8922</p>
             <p>E-mail: contato@vidaplena.com.br</p>
             <p>Seg a Sex · 7h às 19h</p>
           </div>
