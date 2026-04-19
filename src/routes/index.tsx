@@ -392,8 +392,9 @@ function Index() {
             <p>Seg a Sex · 7h às 19h</p>
           </div>
         </div>
-        <div className="border-t border-border/60 py-6 text-center text-xs text-muted-foreground">
-          © 2026 Clínica Vida Plena - Todos os direitos reservados
+        <div className="border-t border-border/60 py-6 text-center text-xs text-muted-foreground space-y-1">
+          <p>© 2026 Clínica Vida Plena - Todos os direitos reservados</p>
+          <p>Criado por Kamyla Emanuelle Gomes 2026</p>
         </div>
       </footer>
     </div>
