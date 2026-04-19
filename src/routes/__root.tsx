@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Clínica Vida Plena | Cuidado e Bem-Estar" },
+      { name: "twitter:description", content: "Atendimento humanizado, exames e especialistas. Agende sua consulta na Clínica Vida Plena." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/49ab3640-af2d-40c9-9885-c08cddea35ac/id-preview-775f57bf--eab49bb3-676d-4214-bbc8-ad6e99d9ac93.lovable.app-1776616820240.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/49ab3640-af2d-40c9-9885-c08cddea35ac/id-preview-775f57bf--eab49bb3-676d-4214-bbc8-ad6e99d9ac93.lovable.app-1776616820240.png" },
     ],
     links: [
       {
